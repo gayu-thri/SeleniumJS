@@ -1,0 +1,17 @@
+{
+  "name": "seleniumexample",
+  "version": "1.0.0",
+  "description": "Selenium Example Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "author": "Gayathri Ethiraj",
+  "license": "MIT",
+  "keywords": [],
+  "dependencies": {
+    "chromedriver": "^79.0.0",
+    "selenium-webdriver": "^4.0.0-alpha.5"
+  }
+}
