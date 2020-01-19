@@ -1,36 +1,39 @@
 const webdriver = require('selenium-webdriver'),
     By = webdriver.By,
     until = webdriver.until;
-    
- const driver = new webdriver.Builder()
+async function login_test1(){  
+let driver =await new webdriver.Builder()
     .forBrowser('chrome')
     .build();
 
-driver.get('https://iris-se.netlify.com/login')
+await driver.get('https://iris-se.netlify.com/login')
 
-driver.findElement(By.xpath("//*[@type=\"text\"]")).sendKeys('egayu3@gmail.com');
-driver.findElement(By.xpath("//*[@type=\"password\"]")).sendKeys('pass');
-
+await driver.findElement(By.xpath("//*[@type=\"text\"]")).sendKeys('egayu3@gmail.com');
+await driver.findElement(By.xpath("//*[@type=\"password\"]")).sendKeys('pass');
+/*
 driver.sleep(1000).then(function() 
 {
     driver.findElement(By.name('q')).sendKeys(webdriver.Key.RETURN);
 });
+*/
+const button =
+driver.until.elementLocated(By.css("button[type=button]"),20000);
+button.click(); 
 
-driver.findElement(By.css("button[type=button]")).click(); 
-
-driver.sleep(2000).then(function() 
+await d.getPageSource().then(function(content) 
 {
-  driver.getTitle().then(function(title) {
-    if(title === 'Login Success') 
-    {
-      console.log('Test passed'); 
-    } else {
+  if(content.indexOf('Welcome ') !==-1 ) {
+   console.log('Test passed');
+   /*console.log('Target page');
+   d.get('https://iris-se.netlify.com') */
+  } else {
       console.log('Test failed');
-    }
-    driver.quit(); 
-  });
+      return false;
+  }
+  //driver.quit();
 });
-
+}
+login_test1();
 
 /*driver.wait(webdriver.until.elementLocated(By.id("logged-in-message")), 10000).getText().then(function(txt){
     console.log("test success: "+txt);
