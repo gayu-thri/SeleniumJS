@@ -16,9 +16,9 @@ driver.sleep(1000).then(function()
     driver.findElement(By.name('q')).sendKeys(webdriver.Key.RETURN);
 });
 */
-const button =
-driver.until.elementLocated(By.css("button[type=button]"),20000);
-button.click(); 
+
+await await(driver.findElement(By.id("loginButton"),20000).click());
+
 
 await d.getPageSource().then(function(content) 
 {
