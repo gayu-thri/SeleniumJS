@@ -43,11 +43,11 @@ async function log2(){
     await driver.getPageSource().then(function(content) 
 {
   if(content.indexOf('Welcome ') !==-1 ) {
-   console.log('Test failed');
+   console.log('Test passed');
    /*console.log('Target page');
    d.get('https://iris-se.netlify.com') */
   } else {
-      console.log('Test passed');
+      console.log('Test failed');
       return false;
   }
   //driver.quit();
@@ -71,11 +71,11 @@ async function log3(){
     await driver.getPageSource().then(function(content) 
 {
   if(content.indexOf('Welcome ') !==-1 ) {
-   console.log('Test failed');
+   console.log('Test passed');
    /*console.log('Target page');
    d.get('https://iris-se.netlify.com') */
   } else {
-      console.log('Test passed');
+      console.log('Test failed');
       return false;
   }
   //driver.quit();
