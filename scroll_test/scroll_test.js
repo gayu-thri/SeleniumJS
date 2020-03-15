@@ -1,34 +1,31 @@
 const webdriver = require('selenium-webdriver'),
     By = webdriver.By,
     until = webdriver.until;
-
-async function scroll()
-{
+async function scroll(){
     let driver =await new webdriver.Builder()
     .forBrowser('chrome')
     .build();
    
-    await driver.get('https://iris-se.netlify.com/register')
+    await driver.get('https://iris-beta.netlify.com/profile')
 //give waitttt hereeeee
 
-    setTimeout(timeout,4000);
-    function timeout() 
-    {
-        console.log("Quitting driver...");
-    }
+setTimeout(timeout,4000);
+function timeout() 
+{
+    console.log("Quitting driver...");
+}
 
     await driver.executeScript("window.scrollBy(0, 1000)")
 
-    if (driver.scroll===false)
-    {
+    if (driver.scroll===false){
         console.log("Test failêd!");
     }
-    else
-    {
+    else{
+
         console.log("Test passed!");
     }
-    driver.quit()
-}
 
+
+}
 
 scroll();
