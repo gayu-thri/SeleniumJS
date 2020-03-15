@@ -5,6 +5,7 @@ const webdriver = require('selenium-webdriver'),
 async function reg_test1(){  
 let driver =await new webdriver.Builder()
     .forBrowser('chrome')
+    .usingServer('http://localhost:4444/wd/hub')
     .build();
 
    await driver.get('https://iris-se.netlify.com/register')

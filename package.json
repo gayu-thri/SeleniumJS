@@ -6,12 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-
   "author": "Gayathri Ethiraj",
   "license": "MIT",
   "keywords": [],
   "dependencies": {
     "chromedriver": "^79.0.0",
-    "selenium-webdriver": "^4.0.0-alpha.5"
+    "selenium-webdriver": "^4.0.0-alpha.7"
   }
 }
