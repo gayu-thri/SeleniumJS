@@ -7,17 +7,17 @@ async function dmp()
     .forBrowser('chrome')
     .build()
 
-    await driver.get('https://iris-beta.netlify.com/profile')
+    await driver.get('https://nostalgic-mccarthy-58e272.netlify.com/profile')
 
     await(await driver.findElement(By.xpath('/html/body/div/div/div/div/div/div[1]/aside/ul/li[2]/a'))).click()
 
-    await driver.findElement(By.xpath('/html/body/div/div/div/div/div/div[2]/div/div/div/form/h1/input')).sendKeys('SaiHarsha B')
-    await driver.findElement((By.xpath('/html/body/div/div/div/div/div/div[2]/div/div/div/form/div/div[4]/input'))).sendKeys('Amrita School of Engineering, Coimbatore')
+    await driver.findElement(By.xpath('/html/body/div/div/div/div/div/div[2]/div/div/div/form/h1/input')).sendKeys('Saiharsha B')
+    await driver.findElement((By.xpath('/html/body/div/div/div/div/div/div[2]/div/div/div/form/div/div[4]/input'))).sendKeys(' Updated with New address')
     await (await driver.findElement(By.xpath('/html/body/div/div/div/div/div/div[2]/div/div/div/form/div/div[6]/button'))).click()
 
     await driver.getPageSource().then(function(content) 
 {
-  if(content.indexOf('Success') !==-1 ) {
+  if(content.indexOf('Successfully updated') !==-1 ) {
    console.log('Test failed');
    /*console.log('Target page');
    d.get('https://iris-se.netlify.com') */
