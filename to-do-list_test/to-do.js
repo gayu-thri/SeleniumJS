@@ -10,7 +10,7 @@ let driver =await new webdriver.Builder()
 await driver.get('https://iris-beta.netlify.com/to-do/')  // changed UI
 //await driver.findElement(By.name('email')).sendKeys('saibalsu@gmail.com')
 string = "TESTING IF ITS WORKING"
-await driver.findElement(By.xpath('//*[@id="__layout"]/div/div/div/div[2]/div/section[2]/div[2]/input')).sendKeys('TESTING IF ITS WORKING')
+await driver.findElement(By.xpath('//*[@id="__layout"]/div/div/div/div[2]/div/section[2]/div[2]/input')).sendKeys(string)
 
     await(await driver.findElement(By.xpath('//*[@id="__layout"]/div/div/div/div[2]/div/section[2]/div[3]/span/button'))).click()
 
