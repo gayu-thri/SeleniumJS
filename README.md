@@ -9,7 +9,7 @@ Chrome browser used here is Version 80.0.3987.132
 
 __Jenkins _CICD___: https://youtu.be/AJwXi6cXysY
 
-# Iris - Faculty Dashboard ([Link](http://nostalgic-mccarthy-58e272.netlify.com/))
+# Iris - Faculty Dashboard ([Link](https://iris-beta.netlify.app/))
 
 Project done as a part of Software Engineering course 15CSE313  
 [View Full Report](https://github.com/gayu-thri/SeleniumJS/blob/master/CSE_E_Faculty_Dashboard_Iris_Report_2020.pdf)
