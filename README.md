@@ -17,3 +17,7 @@ Project done as a part of Software Engineering course 15CSE313
 ## Introduction
 
 In higher education institutions, people managing academic programs may require to monitor and check the progress of data regarding program offerings, course offerings, class attendance, etc.. Implementing a faculty dashboard could improve efficiency in data retrieval and optimize data storage. The dashboard implementation utilized database structure, faculty data was organized and stored in an AWS database and managed with SQL queries to retrieve data for the dashboard. The prototype data dashboard shows different types of functionalities and tables, even though there were some moderate limitations on the overall design due to time and implementation complexities. Future work could focus on streamlining the data preparation and automating the dashboard visualizations for even better efficiency in the faculty dashboard management system.
+
+Takeaways :
+1. Got introduced to CI/CD.
+2. Completed static code analysis.
